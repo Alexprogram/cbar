@@ -1,0 +1,107 @@
+.nav, .nav ul, .nav li {
+    list-style: none;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0 0 0 18px;
+}
+
+.nav {
+    margin: 0px;
+}
+
+.nav > li {
+    margin: 4px 0;
+}
+.nav > li > a {
+
+    background: #F5F5F5;
+    border-left: 8px solid #1C3651;
+}
+
+.nav > li li {
+    margin: 2px 0;
+}
+
+.nav a {
+    color: #333;
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+
+.nav li > a > span {
+    float: right;
+    font-size: 19px;
+    font-weight: bolder;
+    width: 16px;
+    height: 16px;
+}
+
+.nav li > a:hover > span {
+    color: #fff;
+}
+
+.nav li > a > span:after {
+    content: '';
+    background: url(../images/angle-arrow-down1.png) no-repeat top center;
+    -webkit-background-size: 16px 16px; 
+    background-size: 16px 16px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    right: 0;
+    z-index: 3;
+    transform: rotate(-90deg);
+}
+.nav li.open > a > span:after {
+    content: '';
+    background: url(../images/angle-arrow-down1.png) no-repeat top center;
+    -webkit-background-size: 16px 16px; 
+    background-size: 16px 16px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    right: 0;
+    z-index: 3;
+    transform: rotate(0deg);
+}
+/*.nav li.active > a > span:after {
+    content: '';
+    background: url(../images/angle-arrow-down.png) no-repeat top center;
+    -webkit-background-size: 16px 16px; 
+    background-size: 16px 16px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0
+    right: 0;
+    z-index: 33;
+    transform: rotate(-90deg);
+}*/
+
+
+.nav a:hover, .nav li.active > a {
+    background-color: #CBCBCB;
+}
+
+.nav > li.active > a  {
+    background-color: #CBCBCB;
+}
+
+.nav li a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 10px;
+}
+
+.nav > li > a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 10px 8px 15px;
+    color: #222222;
+}
+
